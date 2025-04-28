@@ -13,5 +13,11 @@
 		<ExcludeFilesFromPublish>web.config</ExcludeFilesFromPublish>
 	</PropertyGroup>
 
+	<ItemGroup>
+	  <Content Update="web.config">
+	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	  </Content>
+	</ItemGroup>
+
 
 </Project>
