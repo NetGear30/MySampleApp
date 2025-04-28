@@ -6,13 +6,6 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-	<PropertyGroup>
-		<!-- Disable the built-in web.config generation for IIS -->
-		<IsTransformWebConfigDisabled>true</IsTransformWebConfigDisabled>
-		<!-- (Optional) If it still appears, also exclude it from the final publish -->
-		<ExcludeFilesFromPublish>web.config</ExcludeFilesFromPublish>
-	</PropertyGroup>
-
 	<ItemGroup>
 	  <Content Update="web.config">
 	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
