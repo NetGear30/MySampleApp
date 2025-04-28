@@ -6,11 +6,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-   <Target Name="ExcludeWebConfigFromPublish" AfterTargets="GatherAllFilesToPublish">
-    <ItemGroup>
-      <!-- remove web.config so it never gets packaged or deployed -->
-      <FilesForPackagingFromProject Remove="web.config" />
-    </ItemGroup>
-  </Target>
+	<PropertyGroup>
+		<!-- Disable the built-in web.config generation for IIS -->
+		<IsTransformWebConfigDisabled>true</IsTransformWebConfigDisabled>
+		<!-- (Optional) If it still appears, also exclude it from the final publish -->
+		<ExcludeFilesFromPublish>web.config</ExcludeFilesFromPublish>
+	</PropertyGroup>
+
 
 </Project>
