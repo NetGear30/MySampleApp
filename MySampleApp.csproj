@@ -16,5 +16,9 @@
     </None>
   </ItemGroup>
 
+  <PropertyGroup>
+    <IsTransformWebConfigDisabled>true</IsTransformWebConfigDisabled>
+  </PropertyGroup>
+
 
 </Project>
